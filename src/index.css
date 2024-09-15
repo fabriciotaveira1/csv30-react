@@ -1,3 +1,4 @@
+/* src/index.css */
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -7,7 +8,20 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+* {
+  font-family: Valorant,source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+@font-face {
+  font-family: Valorant;
+  src: url(./assets/font/valorant/ValorantFont.ttf);
+}
+
+/* Importa os estilos base do Tailwind */
+@tailwind base;
+
+/* Importa os utilitários do Tailwind */
+@tailwind components;
+
+/* Importa os estilos personalizados ou adicionais */
+@tailwind utilities;
