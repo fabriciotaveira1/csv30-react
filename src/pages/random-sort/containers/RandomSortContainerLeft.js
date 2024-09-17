@@ -1,10 +1,15 @@
 // src/pages/random-sort/containers/random-sort.js
 import React, { useState } from 'react';
 import SelectComponent from '../../../components/SelectComponent';
+import Btn from '../../../components/Btn';
 
 function RandomSortContainerLeft() {
     // Estado para armazenar os valores selecionados
     const [selectedElo, setSelectedElo] = useState('');
+
+    const handleSelectChange = (event) => {
+        setSelectedElo(event.target.value); // Atualiza o valor selecionado
+      };
 
     // Listas de opções para os selects
     const eloOptions = [
@@ -21,11 +26,11 @@ function RandomSortContainerLeft() {
     ];
 
     return (
-        <div className="random-sort-container-left" class="container h-full bg-white text-gray-700 font-semibold mb-2 p-4">
+        <div className="random-sort-container-left" class="container h-full bg-white text-gray-700 font-semibold mb-2 p-4 h-150">
             <h3 class="text-center text-2xl font-bold mb-4">ADICIONE UM JOGADOR</h3>
-            <div class="max-w-md mx-auto bg-white p-6 rounded-lg shadow-md">
-                <label htmlFor="playerName" class="block text-gray-700 font-semibold mb-2">
-                    Nome do Jogador:
+            <div class="flex items-center space-x-4">
+                <label htmlFor="playerName" class="text-gray-700 font-semibold mb-2">
+                    Nome:
                 </label>
                 <input
                     type="text"
@@ -39,7 +44,11 @@ function RandomSortContainerLeft() {
                 options={eloOptions}
                 label="Elo:"
                 value={selectedElo}
+                onChange={handleSelectChange} // Função que atualiza o estado ao selecionar uma opção
             />
+            <div class="flex justify-center items-end mt-5">
+                <Btn btnLabel="Adicionar" />
+            </div>
         </div>
     );
 }

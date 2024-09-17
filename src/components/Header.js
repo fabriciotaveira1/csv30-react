@@ -9,11 +9,10 @@ function Header() {
                 <div class="container mx-auto flex justify-between items-center">
                     {/* Itens a esquerda */}
                     <div class='flex items-center space-x-6'>
-                        <a href="#" class="text-white font-bold hover:text-gray-300">LOGO</a>
-                        <a href="#" class="text-white font-bold hover:text-gray-300">COLOCACOES</a>
-                        <a href="#" class="text-white font-bold hover:text-gray-300">SORTEADOR ALEATORIO</a>
-                        <a href="#" class="text-white font-bold hover:text-gray-300">REGRAS</a>
-                        <a href="#" class="text-white font-bold hover:text-gray-300">SOBRE NOS</a>
+                        <a href="/" class="text-white font-bold hover:text-gray-300">LOGO</a>
+                        <a href="/random-sort" class="text-white font-bold hover:text-gray-300">SORTEADOR ALEATORIO</a>
+                        <a href="/contact" class="text-white font-bold hover:text-gray-300">CONTATO</a>
+                        <a href="/about" class="text-white font-bold hover:text-gray-300">SOBRE NOS</a>
                     </div>
 
                     {/* Itens à direita */}

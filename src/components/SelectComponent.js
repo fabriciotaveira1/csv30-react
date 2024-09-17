@@ -1,5 +1,4 @@
-// src/components/SelectComponent.js
-import React, { useState } from 'react';
+import React from 'react';
 
 function SelectComponent({ options, label, value, onChange }) {
   return (
@@ -9,8 +8,8 @@ function SelectComponent({ options, label, value, onChange }) {
       </label>
       <select
         id="select"
-        value={value}
-        onChange={onChange}
+        value={value} 
+        onChange={onChange} // Manipulador de mudança no componente pai
         className="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
       >
         <option value="">Selecione...</option>

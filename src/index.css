@@ -8,7 +8,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-* {
+h1,nav,h2,h4,h5,h6 {
   font-family: Valorant,source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
