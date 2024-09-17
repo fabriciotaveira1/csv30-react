@@ -67,13 +67,13 @@ O backend é desenvolvido com Node.js e Express e está localizado no diretório
 ### Frontend
 
 - **Home**: `http://localhost:3000/`
-![alt text](image.png)
+![alt text](src/assets/images/image.png)
 - **Sorteador Aleatório**: `http://localhost:3000/random-sort`
-![alt text](image-1.png)
+![alt text](src/assets/images/image-1.png)
 - **Sobre Nós**: `http://localhost:3000/about`
-![alt text](image-2.png)
+![alt text](src/assets/images/image-6.png)
 - **Contato**: `http://localhost:3000/contact`
-![alt text](image-3.png)
+![alt text](src/assets/images/image-5.png)
 
 ### Backend
 
