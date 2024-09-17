@@ -4,7 +4,9 @@ import React from 'react';
 function AboutPage() {
     return (
         <main className="w-full bg-gray-100 mx-auto p-4">
-            <h1 className="text-6xl text-center text-blue-800 font-bold mb-6">Sobre Nós</h1>
+            <section className="text-center py-12 bg-blue-600 text-white mb-5">
+                <h1 className="text-6xl font-bold mb-4">SOBRE NÓS</h1>
+            </section>
             <div className="bg-white rounded-lg shadow-lg p-6 max-w-3xl mx-auto">
                 <h2 className="text-3xl text-blue-600 font-semibold mb-4">Quem Somos</h2>
                 <p className="text-gray-700 leading-relaxed">
