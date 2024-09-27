@@ -1,6 +1,7 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const authRoutes = require('./routes/authRoutes');
+const playerRoutes = require('./routes/playerRoutes');
 const path = require('path');
 const app = express();
 
@@ -27,6 +28,8 @@ app.use(express.json());
 // Rotas de autenticação
 app.use('/api/auth', authRoutes);
 
+// Rotas de jogadores
+app.post('/api/jogadores', playerRoutes);
 
 // Serve arquivos estáticos da pasta 'build'
 app.use(express.static(path.join(__dirname, '../build')));
