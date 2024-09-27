@@ -1,7 +1,32 @@
 const express = require('express');
 const mongoose = require('mongoose');
+const authRoutes = require('./routes/authRoutes');
 const path = require('path');
 const app = express();
+
+// Importando cors
+const cors = require('cors');
+app.use(cors());
+
+
+// importando classes
+const Usuario = require('./models/User');
+const Jogador = require('./models/Jogador');
+const Equipe = require('./models/Equipe');
+
+// importando db
+const connectDB = require('./db');
+
+// conectando ao MongoDB
+
+connectDB();
+
+// Middleware para interpretar JSON
+app.use(express.json());
+
+// Rotas de autenticação
+app.use('/api/auth', authRoutes);
+
 
 // Serve arquivos estáticos da pasta 'build'
 app.use(express.static(path.join(__dirname, '../build')));

@@ -8,11 +8,13 @@ const connectDB = async () => {
             useNewUrlParser: true,
             useUnifiedTopology: true,
         });
-        console.log("MongoDB connected");
+        console.log('Conexão com MongoDB estabelecida');
     } catch (error) {
-        console.error(`Error: ${error.message}`);
-        process.exit(1);
+        console.error('Falha ao autenticar com MongoDB', error);
+        process.exit(1); // Encerra o processo se a conexão falhar
     }
 };
+
+mongoose.Promise = global.Promise;
 
 module.exports = connectDB;
